@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;  /* Increased font size */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 10px 10px;
+    background: #333;
+    color: white;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;  /* Slightly larger */
+}
+
+header p {
+    font-size: 1.4em;  /* Increased for readability */
+}
+
+/* Navigation */
+nav {
+    background: #444;
+    text-align: center;
+    padding: 12px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 18px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;  /* Slightly larger */
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    position: relative;
+    border: 2px solid #ddd;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-size: 1.1em;  /* Increased size for better readability */
+}
+
+/* Corner Delimiters */
+section::before, section::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #333;
+}
+
+section::before {
+    top: -2px;
+    left: -2px;
+    border-right: none;
+    border-bottom: none;
+}
+
+section::after {
+    bottom: -2px;
+    right: -2px;
+    border-left: none;
+    border-top: none;
+}
+
+/* Speaker Section */
+.speaker {
+    border-left: 4px solid #333;
+    padding: 12px;
+    margin: 12px 0;
+}
+
+/* Headings */
+h2 {
+    font-size: 2em;  /* Increased heading size */
+    text-align: left;
+}
+
+/* Lists */
+ul {
+    padding-left: 25px;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;  /* Slightly larger */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 22px;
+    background: #222;
+    color: white;
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 12px 0;
+    }
+    section {
+        padding: 45px 15px;
+    }
+}
