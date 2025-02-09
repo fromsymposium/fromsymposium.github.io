@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    font-size: 18px;  /* Increased font size */
+    font-size: 14px;  /* Increased font size */
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
@@ -53,7 +53,7 @@ nav ul li a {
 /* Sections */
 section {
     padding: 60px 20px;
-    max-width: 900px;
+    max-width: 600px;
     margin: auto;
     background: white;
     position: relative;
