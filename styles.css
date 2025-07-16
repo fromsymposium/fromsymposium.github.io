@@ -9,6 +9,23 @@ div.abstract {
     font-size: 16pt;
 }
 
+img {
+    max-width: 120pt;
+}
+
+.text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+  
 body {
     font-family: Arial, sans-serif;
     font-size: 14px;  /* Increased font size */
