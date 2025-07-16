@@ -7,13 +7,25 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+	  <script language="javascript">
+	    function toggleVisible(divId) {
+	        var div = document.getElementById(divId);
+	        if (div) {
+		        if (div.style.display == 'block') {
+		            div.style.display = 'none';
+		        } else {
+		            div.style.display = 'block';
+		        }
+	        }
+	    }
+	  </script>
         
         <nav>
             <ul>
               <li><a class="nav" href="#">FROM 2025</a>
                 </li>
-                <li><a class="nav" style="margin-left: 2em" href="#Submit">Submit</a></li>
-                <li><a class="nav" href="#about">About</a></li>
+                <!-- <li><a class="nav" style="margin-left: 2em" href="#Submit">Submit</a></li> -->
+                <li><a class="nav" style="margin-left: 2em" href="#about">About</a></li>
                 <li><a class="nav" href="#topics">Topics</a></li>
                 <li><a class="nav" href="#speakers">Speakers</a></li>
                 <li><a class="nav" href="#dates">Dates</a></li>
@@ -29,36 +41,36 @@
             <h2>Alexandru Ioan Cuza University, Iași, Romania </h2>
         </header>
 
-        <section id="Submit">
-          <h2>Submission Guidelines</h2>
+        <!-- <section id="Submit"> -->
+        <!--   <h2>Submission Guidelines</h2> -->
 
-          <p>Papers of up to 16 pages (excluding references and
-          appendices) prepared according to the EPTCS template
-          (<a href="https://style.eptcs.org/">https://style.eptcs.org/</a>)
-          must be submitted electronically using the EasyChair
-          submission system
-          (<a href="https://easychair.org/conferences?conf=from2025">https://easychair.org/conferences?conf=from2025</a>). Research
-          papers must contain original research results not submitted
-          or published elsewhere.</p>
+        <!--   <p>Papers of up to 16 pages (excluding references and -->
+        <!--   appendices) prepared according to the EPTCS template -->
+        <!--   (<a href="https://style.eptcs.org/">https://style.eptcs.org/</a>) -->
+        <!--   must be submitted electronically using the EasyChair -->
+        <!--   submission system -->
+        <!--   (<a href="https://easychair.org/conferences?conf=from2025">https://easychair.org/conferences?conf=from2025</a>). Research -->
+        <!--   papers must contain original research results not submitted -->
+        <!--   or published elsewhere.</p> -->
 
-          <p>Authors wishing to present work in progress or survey
-            previous research are invited to submit an extended
-            abstract up to 8 pages (all included). Papers will be
-            reviewed and selected based on scientific merit and
-            relevance.</p>
+        <!--   <p>Authors wishing to present work in progress or survey -->
+        <!--     previous research are invited to submit an extended -->
+        <!--     abstract up to 8 pages (all included). Papers will be -->
+        <!--     reviewed and selected based on scientific merit and -->
+        <!--     relevance.</p> -->
           
-          <p>Selected papers will be invited to submit an extended
-          version to
-          the <a href="https://www.sciencedirect.com/journal/journal-of-logical-and-algebraic-methods-in-programming">Journal
-          of Logical and Algebraic Methods in Programming</a>, subject
-          to formal approval by Elsevier.
-          </p>
-          <ul>
-            <li>Submit your work
-            using <a href="https://easychair.org/my/conference?conf=from2025">EasyChair</a>.</li>
-            <li>See the <a href="https://easychair.org/cfp/FROM2025">call for papers</a>.</li>
-          </ul>
-        </section>
+        <!--   <p>Selected papers will be invited to submit an extended -->
+        <!--   version to -->
+        <!--   the <a href="https://www.sciencedirect.com/journal/journal-of-logical-and-algebraic-methods-in-programming">Journal -->
+        <!--   of Logical and Algebraic Methods in Programming</a>, subject -->
+        <!--   to formal approval by Elsevier. -->
+        <!--   </p> -->
+        <!--   <ul> -->
+        <!--     <li>Submit your work -->
+        <!--     using <a href="https://easychair.org/my/conference?conf=from2025">EasyChair</a>.</li> -->
+        <!--     <li>See the <a href="https://easychair.org/cfp/FROM2025">call for papers</a>.</li> -->
+        <!--   </ul> -->
+        <!-- </section> -->
           
         <section id="about">
 
@@ -121,7 +133,10 @@ Type systems;
                 <h2>Keynote Speakers</h2>
                 <ul>
                     <li>
-                        <a href="https://people.utwente.nl/g.g.c.caltais">Georgiana Caltais</a>, University of Twente
+                        <a href="https://people.utwente.nl/g.g.c.caltais">Georgiana Caltais</a>, University of Twente: A Comparative Perspective on Fault Trees and Actual Causality (<a style="cursor: pointer;" onclick="toggleVisible('abstractGeorgianaCaltais')">see abstract</a>)
+		                <div class="abstract" id="abstractGeorgianaCaltais">
+                          Understanding why complex systems fail is a central concern across engineering and formal reasoning disciplines. Over time, distinct communities have developed fundamentally different tools for causal analysis. Fault Trees, rooted in reliability engineering, offer a top-down, structural view of failure propagation. In contrast, the Halpern-Pearl framework for Actual Causality stems from formal logic and artificial intelligence, providing a counterfactual and interventionist account of causation. Drawing from recent joint work, the talk aims to offer both a formal bridge between these traditions and a roadmap for integrating interventions, counterfactuals, and design-time reasoning into classical fault analysis frameworks.
+                        </div>
                     </li>
                     <li>
                         <a href="https://www.labri.fr/perso/leroux/">Jérôme Leroux</a>, Laboratoire Bordelais de Recherche en Informatique
@@ -130,18 +145,84 @@ Type systems;
                         <a href="https://people.mpi-sws.org/~rupak/">Rupak Majumdar</a>, Max Planck Institute for Software Systems and Automated Reasoning Group, Amazon Web Services
                     </li>
                     <li>
-                        <a href="https://www.comp.nus.edu.sg/~chinwn/">Chin Wei Ngan</a>, National University of Singapore
+                        <a href="https://www.comp.nus.edu.sg/~chinwn/">Chin Wei Ngan</a>, National University of Singapore: From Separation Logic to Staged Logic for Higher-Order Programs and Beyond (<a style="cursor: pointer;" onclick="toggleVisible('abstractChinWeiNgan')">see abstract</a>)
+		                <div class="abstract" id="abstractChinWeiNgan">
+
+<p> Higher-order functions and imperative states are language features
+supported by many mainstream languages. Their combination is
+expressive and useful, but complicates specification and reasoning,
+due to the use of yet-to-be-instantiated function parameters.  One
+inherent limitation of existing specification mechanisms is its
+reliance on <i>only two stages</i>: an initial stage to denote the
+precondition at the start of the method and a final stage to capture
+the postcondition. Such two-stage specifications force abstract
+properties to be imposed on unknown function parameters, leading to
+less precise specifications for higher-order methods.</p>
+
+<p>To overcome this limitation, we introduce a novel extension to
+Hoare logic that supports <i>multiple stages</i> for a call-by-value
+higher-order language with ML-like local references.</p>
+
+<p>In this talk, we introduce our staged logic with its semantics, and
+show how it can be used to handle higher-order imperative programs,
+including those that arise from the use of delimited continuations
+(from algebraic effects).</p>
+                        </div>
                     </li>
                     <li>
                         <a href="https://cs.unibuc.ro/~tserbanuta/">Traian
                         Florin Șerbănuță
-</a>, University of Bucharest and Pi Squared Inc.
+</a>, University of Bucharest and Pi Squared Inc.: A Logic-Programming Approach to Arithmetic Circuit Design
+–Deriving Zero-Knowledge Certificates from Mathematical Proofs–(<a style="cursor: pointer;" onclick="toggleVisible('abstractTraianFlorinSerbanuta')">see abstract</a>)
+		                <div class="abstract" id="abstractTraianFlorinSerbanuta">
+<p>Zero-knowledge (ZK) proof systems have received increasing attention
+in recent years, driven in large part by applications in blockchain
+and privacy-preserving computation. While many advances have focused
+on certifying the correctness of computations with partial information
+hidden from the verifier, recent efforts–such as zkUNSAT[1], zkSMT[2],
+and zkPi[3]–have begun to explore the use of ZK techniques to certify
+mathematical proofs themselves.</p>
+
+<p>This talk introduces a new general-purpose language for expressing
+proofs and computations, grounded in principles from logic
+programming, and designed to enable the efficient construction of
+arithmetic circuits suitable for zero-knowledge proof systems. The
+language is implemented as part of PiSquared’s Proof-of-Proof
+framework and aims to bridge declarative proof development with
+low-level ZK-friendly circuit representations.</p>
+
+<p>We illustrate the approach through a case study on certifying
+unsatisfiability refutations, yielding a tool comparable in
+functionality to zkUNSAT. The derivation methodology and
+circuit-generation process will be illustrated through concrete
+examples, highlighting both expressiveness and performance.</p>
+
+<p>References</p>
+
+<p>[1] Luo, N., Antonopoulos, T., Harris, W. R., Piskac, R., Tromer, E.,
+& Wang, X. (2022, November). Proving UNSAT in Zero Knowledge. In
+Proceedings of the 2022 ACM SIGSAC Conference on Computer and
+Communications Security (pp. 2203-2217).</p>
+
+<p>[2] Luick, D., Kolesar, J. C., Antonopoulos, T., Harris, W. R.,
+Parker, J., Piskac, R., ... & Luo, N. (2024). zkSMT: A VM for Proving
+SMT Theorems in Zero Knowledge. In 33rd USENIX Security Symposium
+(USENIX Security 24) (pp. 3837-3845).</p>
+
+<p>[3] Laufer, E., Ozdemir, A., & Boneh, D. (2024, December). zkPi:
+Proving Lean Theorems in Zero-Knowledge. In Proceedings of the 2024 on
+ACM SIGSAC Conference on Computer and Communications Security
+(pp. 4301-4315).</p>
+                        </div>
                     </li>
                 </ul>
 
                 <h2>Tutorial Speaker</h2>
                 <li>
-                  Alexandru Ipatiov, Continental Automotive Romania SRL
+                  Alexandru Ipatiov, Continental Automotive Romania SRL: A Z3 based automated architecture-synthesis tool for automotive industry (<a style="cursor: pointer;" onclick="toggleVisible('abstractAlexandruIpatiov')">see abstract</a>)
+		                <div class="abstract" id="abstractAlexandruIpatiov">
+<p>The presentation reveals how Continental chose to pursue the endeavor of automated synthesis of correct-by-design in-vehicle system architectures. Aspects related to types of problems solved, use-cases, necessary models, annotations, typical constraints and optimization objectives are discussed for a realistic automotive system. Implementation alternatives are showcased and thoughts on upcoming challenges are shared with the audience.</p>
+                        </div>
                 </li>
             </section>
 

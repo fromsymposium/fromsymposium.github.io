@@ -1,4 +1,14 @@
 /* General Styles */
+div.abstract {
+    background:#F9F9F9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: none;
+    font-size: 16pt;
+}
+
 body {
     font-family: Arial, sans-serif;
     font-size: 14px;  /* Increased font size */
