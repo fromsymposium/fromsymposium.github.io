@@ -9,7 +9,7 @@ div.abstract {
     font-size: 16pt;
 }
 
-img {
+.image {
     max-width: 120pt;
 }
 
@@ -23,7 +23,6 @@ img {
 .container {
   display: flex;
   align-items: center;
-  justify-content: center
 }
   
 body {
