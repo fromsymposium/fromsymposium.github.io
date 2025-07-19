@@ -148,9 +148,18 @@ Type systems;
                           <img class="image" src="blank.png"/>
                       </div>
                       <div class="text">
-                          <a href="https://www.labri.fr/perso/leroux/">Jérôme Leroux</a>, Laboratoire Bordelais de Recherche en Informatique
+                        <a href="https://www.labri.fr/perso/leroux/">Jérôme Leroux</a>, Laboratoire Bordelais de Recherche en Informatique: <i>Well Quasi Orders and Formal Verification</i>
+                        (<a style="cursor: pointer;" onclick="toggleVisible('abstractJeromeLeroux')">see abstract</a>)
                       </div>
                   </div>
+		                <div class="abstract" id="abstractJeromeLeroux">
+
+<p>A sequence of elements is said to be bad for a quasi-order if no element of the sequence is larger than or equal to a previous element. A quasi-order is said to be well if every bad sequence is finite. Well-quasi-orders (wqo for short) is a central notion for proving some decidability results. For instance, the termination of the Karp and Miller algorithm relies on a wqo. Intuitively, the proof of termination is obtained by observing that if the algorithm does not terminate, ultimately, it should compute an infinite bad sequence. Wqo can also be used for proving complexity results. By controlling with a function the way elements of a sequence can grow respectively to its position in the sequence, bounds on the maximal length of a bad sequence can be derived. As an example, the length of a bad sequence of vectors of natural numbers for the component-wise ordering is bounded by an Ackermann function for linearly controlled functions. Recently wqo was also used for explaining the data-structures computed by the KLM algorithm, an algorithm for deciding the reachability problem for Petri nets. Intuitively,  the data-structures computed by the KLM algorithm are related to the classical notion of decomposition of downward-closed sets into ideals.
+</p>
+  <p>
+In this talk, we will survey past and recent results about wqo with a special focus on the reachability problem for Petri nets.
+</p>
+                        </div>
                   <div class="container">
                       <div class="image">
                           <img class="image" src="blank.png"/>
