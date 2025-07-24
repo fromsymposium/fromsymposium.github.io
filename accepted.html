@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+        <script>window['ec:pageId']='9404712128360432586'
+        </script>
+        <title>FROM 2025 Accepted Papers with Abstracts
+        </title>
+    </head>
+    <body>
+
+        <h1>FROM 2025 Accepted Papers with Abstracts
+        </h1>
+
+
+        <style>
+
+         .accepted {clear:right;margin-bottom:20pt;padding:3pt}
+         
+         .abstract {border-left: solid black 1px;border-right: solid
+             black 1px;border-top: solid black 1px;padding:3pt}
+
+         .paper     {border-left: solid black 1px;border-right: solid black
+             1px;border-top: solid black 1px;padding:2pt}
+         
+         .abstract:last-child {border-bottom: solid black
+             1px;padding:3pt}
+
+         .paper:last-child {border-bottom: solid black
+                 1px;padding:2pt}
+        </style>
+
+        
+
+        <div class="paper">
+            <span class="authors">
+                <span>Markus Krahl, Matthias Guedemann and Stefan Wallentowitz.
+                </span>
+            </span>
+            <span class="title">parSAT: Parallel Solving of Floating-Point Satisfiability
+            </span>
+        </div>
+
+        <div class="abstract">
+            <b>Abstract:
+            </b>Satisfiability-based verification techniques, leveraging modern Boolean satisfiability (SAT) and Satisfiability Modulo Theories (SMT) solvers, have demonstrated efficacy in addressing practical problem instances within program analysis.  However, current SMT solver implementations often encounter limitations when addressing non-linear arithmetic problems, particularly those involving floating point operations. This poses a significant challenge for safety critical applications, where accurate and reliable calculations based on floating point numbers and elementary mathematical functions are essential.  This paper shows how an alternative formulation of the satisfiability problem for floating-point calculations allows for exploiting parallelism for FP constraint solving. By combining global optimization approaches with parallel execution on modern multi-core CPUs, we construct a portfolio-based semi-decision procedure specifically tailored to handle floating-point arithmetic. We demonstrate the potential of this approach to complement conventional methods through the evaluation of various benchmarks.
+        </div>
+
+        <div class="paper">
+            <span class="authors">
+                <span>Mihai Prunescu.
+                </span>
+            </span>
+            <span class="title">Polynomial fingerprinting for trees and formulas
+            </span>
+        </div>
+
+        <div class="abstract">
+            <b>Abstract:
+            </b>To cater to the needs of (Zero Knowledge) proofs for (mathematical) proofs, we describe a method to transform formal sentences in 2×2 - matrices over multivariate polynomials with integer coefficients, such that usual proof-steps like modus-ponens or the substitution are easy to compute from the matrices corresponding to the terms or formulas used as arguments. By evaluating the polynomial variables in random elements of a suitably chosen finite field, the proof is replaced by a numeric sequence. Only the values corresponding to the axioms have to be computed from scratch. The values corresponding to derived formulas are computed from the values corresponding to their ancestors by applying the homomorphic properties. On such sequences, various Zero Knowledge methods can be applied.
+        </div>
+
+        <div class="paper">
+            <span class="authors">
+                <span>Ádám Kurucz, Péter Bereczky and Dániel Horpácsi.
+                </span>
+            </span>
+            <span class="title">On a Dependently Typed Encoding of Matching Logic
+            </span>
+        </div>
+
+        <div class="abstract">
+            <b>Abstract:
+            </b>Matching logic is a general formal framework for reasoning about a wide range of theories, with particular emphasis on programming language semantics. Notably, the intermediate language of the K semantics framework is an extension of matching µ-logic, a sorted, polyadic variant of the logic. Metatheoretic reasoning requires the logic to be expressed within a foundational theory; opting for a dependently typed one enables well-sortedness in the object theory to correspond directly to well-typedness in the host theory. In this paper, we present the first dependently typed definition of matching µ-logic, ensuring well-sortedness via sorted contexts encoded in type indices. As a result, ill-sorted syntax elements are unrepresentable, and the semantics of well-sorted elements are guaranteed to lie within the domain of their associated sort.
+        </div>
+
+        <div class="paper">
+            <span class="authors">
+                <span>Frédéric Fort, David Nowak and Vlad Rusu.
+                </span>
+            </span>
+            <span class="title">Pleasant imperative program proofs with GallinaC
+            </span>
+        </div>
+
+        <div class="abstract">
+            <b>Abstract:
+            </b>In this paper, we present GallinaC, a shallow embedding of a Turing-complete imperative language directly inside the functional programming language of the Rocq proof assistant, Gallina. In particular, it features a truly generic and unbounded while loop. Having a functional core means proofs about GallinaC programs may use the same tactics as proofs about pure functional ones.  Compilation from GallinaC to binary is possible through the CompCert certified compiler. A chain of forward simulations guarantees that compilation passes preserve semantics.  Work on GallinaC is still under progress, but we present first promising results. A prototype implementation has shown the viability of GallinaC with the correctness proof of a list reversal procedure for linked-lists of unknown size. We currently focus on the forward simulation between the GallinaC intermediate representation (IR) and Cminor, the entry language of the CompCert back-end.
+        </div>
+
+        <div class="paper">
+            <span class="authors">
+                <span>
+                    <a href="https://davidnowak.github.io">David Nowak
+                    </a> and
+                    <a href="https://researchr.org/profile/vladrusu">Vlad Rusu</a>.
+                </span>
+            </span>
+            <span class="title">Reverse State in Rocq: A Monad that Defies Causality (work in progress)
+            </span>
+        </div>
+
+        <div class="abstract">
+            <b>Abstract:
+            </b>The reverse state monad introduces a peculiar effect in programs: the apparent ability to make decisions based on information from the future. The resulting programs are executable; for example, Haskell runs them without problems, thanks to its lazy evaluation; but the programs can be hard to understand. Support for formal reasoning about such programs in a proof assistant such as Rocq is therefore a worthwhile challenge. However, defining the reverse state monad in Rocq already presents some challenges. In this paper we describe progress towards overcoming these challenges.
+        </div>
+
+        <div class="paper">
+            <span class="authors">
+                <span>Andrei Nacu and Dorel Lucanu.
+                </span>
+            </span>
+            <span class="title">Navigating the Python Type Jungle
+            </span>
+        </div>
+
+        <div class="abstract">
+            <b>Abstract:
+            </b>Python's typing system has evolved pragmatically into a powerful but theoretically fragmented system, with scattered specifications. This paper proposes a formalization to address this fragmentation. The central contribution is a formal foundation that uses concepts from type theory to demonstrate that Python's type system can be elegantly described. This work aims to serve as a crucial first step toward the future development of type inference tools.
+        </div>
+
+        <div class="paper">
+            <span class="authors">
+                <span>Stefan-Claudiu Susan, Andrei Arusoaie and Dorel Lucanu.
+                </span>
+            </span>
+            <span class="title">Validating Solidity Code Defects using Symbolic and Concrete Execution powered by Large Language Models
+            </span>
+        </div>
+
+        <div class="abstract">
+            <b>Abstract:
+            </b>The high rate of false alarms from static analysis tools and Large Language Models (LLMs) complicates vulnerability detection in Solidity Smart Contracts, demanding methods that can formally or empirically prove the presence of defects. This paper introduces a novel detection pipeline that integrates custom Slither-based detectors, LLMs, Kontrol, and Forge. Our approach is designed to reliably detect defects and generate proofs.   We currently perform experiments with promising results for seven types of critical defects. We demonstrate the pipeline's efficacy by presenting our findings for three of the seven vulnerabilities, including (e.g., reentrancy and access control), and highlighting the potential of either symbolic or concrete execution in correctly classifying such code faults. By chaining these instruments, our method effectively validates true positives, significantly reducing the manual verification burden. Although we identify potential limitations, our findings establish a robust framework for combining heuristic analysis with formal verification to achieve more reliable and automated smart contract auditing.
+        </div>
+
+        <div class="paper">
+            <span class="authors">
+                <span>Raul Zaharia, Dragos Gavrilut and Gheorghiță Mutu.
+                </span>
+            </span>
+            <span class="title">GView: A Survey of Binary Forensics via Visual, Semantic, and AI-Enhanced Analysis
+            </span>
+        </div>
+
+        <div class="abstract">
+            <b>Abstract:
+            </b>Cybersecurity threats continue to become more sophisticated and diverse in their artifacts, boosting both their volume and complexity. To overcome those challenges, we present GView, an open-source forensic analysis framework with visual and AI-enhanced reasoning. It started with focus on the practical cybersecurity industry. It  has evolved significantly, incorporating large language models (LLMs) to dynamically enhance reasoning and ease the forensic workflows. This paper surveys both the current state of GView with its published papers alongside those that are in the publishing process. It also includes its innovative use of logical inference through predicates and inference rules for both the analyzed documents and the user's actions for better suggestions. We highlight the extensible architecture, showcasing its potential as a bridge between the practical forensics worlds with the academic research.
+        </div>
+
+        <div class="paper">
+            <span class="authors">
+                <span>Dumitru Bogdan Prelipcean and
+                    <a href="http://www.lacl.fr/dima/">Catalin Dima</a>.
+                </span>
+            </span>
+            <span class="title">Bridging Threat Models and Detections: Formal Verification via CADP
+            </span>
+        </div>
+
+        <div class="abstract">
+            <b>Abstract:
+            </b>Threat detection systems rely on rule-based logic to identify adversarial behaviors, yet the conformance of these rules to high-level threat models is seldom verified formally. We present a formal verification framework that models both detection logic and attack trees as labeled transition systems (LTSs), enabling automated conformance checking via bisimulation and weak trace inclusion. Detection rules specified in the Generic Threat Detection Language (GTDL) are assigned a compositional operational semantics, and threat models expressed as attack trees are interpreted as LTSs through structural trace semantics. Both representations are translated to LNT, a modeling language supported by the CADP toolbox. This common semantic domain enables systematic and automated verification of detection coverage. We evaluate our approach on real-world malware scenarios such as LokiBot and Emotet and provide scalability analysis through parametric synthetic models. Results confirm that our methodology identifies semantic mismatches between threat models and detection rules, supports iterative refinement, and scales to realistic threat landscapes.
+        </div>
+
+        <div class="paper">
+            <span class="authors">
+                <span>Xiaohong Chen, Horatiu Cheval, Dorel Lucanu and Grigore Rosu.
+                </span>
+            </span>
+            <span class="title">A Matching Logic Theory of Contexts with Applications to K (Work in Progress)
+            </span>
+        </div>
+
+        <div class="abstract">
+            <b>Abstract:
+            </b>We present work in progress towards a theory of contexts in Applicative Matching Logic (ML), intended as a general and uniform way of formally specifying the semantics of rewrite rules in the K framework.
+        </div>
+
+        <div class="paper">
+            <span class="authors">
+                <span>
+                    <a href="http://dep2.mathem.pub.ro/balan/balan_en.html">Adriana Balan
+                    </a> and Silviu-George Pantelimon.
+                </span>
+            </span>
+            <span class="title">The hidden strength of costrong functors
+            </span>
+        </div>
+
+        <div class="abstract">
+            <b>Abstract:
+            </b>Strong functors and monads are ubiquitous in Computer Science. More recently, comonads have demonstrated their use in structuring context-dependent notions of computation. However, the dualisation of ``being strong'' property passed somehow unobserved so far. This is perhaps because functors in Set are costrong with respect to the cartesian product iff they are copointed. We argue that ``being costrong'' gives a different understanding of how functors can interact with monoidal structures. This work in progress aims to explore costrong functors and their natural properties, with an eye towards applications in computations and specifications.
+        </div>
+
+        <div class="paper">
+            <span class="authors">
+                <span>Ioana Leuștean and Bogdan Macovei.
+                </span>
+            </span>
+            <span class="title">Łukasiewicz Logic with Actions for Neural Networks training
+            </span>
+        </div>
+
+        <div class="abstract">
+            <b>Abstract:
+            </b>Based on the already known connection between multilayer perceptrons and Łukasiewicz logic with rational coefficients, we take a step forward in analyzing its training process using a three-sorted hybrid modal logic: a multilayer perceptron is a logical formula; the actions of the training process are modal operators; the training process is a sequence of logical deductions. Using the proof assistant and the programming language Lean 4, the algorithmic implementation of the training process is certified by logical proofs.
+        </div>
+    </body>
+</html>
